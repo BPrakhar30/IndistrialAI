@@ -47,7 +47,7 @@ Input [query1.xlsx and productdb.csv (column 3)] --> [mapping.py] --> Output [af
 
 ### Notes
 
-1. Apologies for not retrieving all the top 10 matches for each entry in `request.pdf`. This was done only for categories where mapping was based on category or dimension. For name-based mapping, only the best match was used.
+1. I haven't retrieved all the top 10 matches for each entry in `request.pdf`. This was done only for categories where mapping was based on category or dimension. For name-based mapping, only the best match was used.
 2. An end-to-end pipeline for generating the final quotation is not completed; converting the mapped items to PDF is pending.
 3. My first method used ChromaDB as vectordb (also tried FAISS, which performed better with vector search on the query) and Text Embedding 3 Large as the embedding model.
 4. The first method had very low latency (almost real-time) but poor results, making it unsuitable for calculating top-k accuracy.
